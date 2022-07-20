@@ -1,0 +1,35 @@
+{
+    "isSuccess": true,
+    "message": "string",
+    "result": {
+      "projectId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "userOid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "projectName": "string",
+      "projectAddress": "string",
+      "cordellProjectNumber": "string",
+      "systems": [
+        {
+          "projectSystemId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "systemId": "CSR 7020 .1.1",
+          "systemDetails":"string",
+          "customSystemName": "string",
+          "tags": [
+            {
+              "projectSystemTagId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+              "tag": "string"          }
+          ]
+        },
+        {
+            "projectSystemId": "3fa85f64-5717-4562-b3fc-2c963f66afa7",
+            "systemId": "CSR 7665 1.2",
+            "systemDetails":"string",
+            "customSystemName": "string",
+            "tags": [
+              {
+                "projectSystemTagId": "3fa85f64-5717-4562-b3fc-2c963f66afa7",
+                "tag": "string"          }
+            ]
+          }
+      ]
+    }
+  }
