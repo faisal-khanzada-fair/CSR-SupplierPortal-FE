@@ -5,7 +5,7 @@ import { AuthenticationService } from "./../authentication/authentication.servic
 import { environment } from "../../../environments/environment";
 import { CsrApiResult } from "../../model/csr-api-result";
 import { HttpClient } from "@angular/common/http";
-import { SystemMessage } from "../../../../components/CSR.AngularComponents/infrastructure/system-message";
+import { SystemMessage } from "../../../../components/infrastructure/system-message";
 
 @Injectable({
 	providedIn: "root",
