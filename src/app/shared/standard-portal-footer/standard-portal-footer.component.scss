@@ -1,0 +1,23 @@
+#footer {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 52px;
+    background: transparent;
+    color: slateblue;
+    overflow: hidden;
+
+    .footer-logo {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        padding: 6px;
+        height: 52px;
+        width: 52px;
+        text-decoration: none;
+        background: white;
+    }
+}

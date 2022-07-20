@@ -1,0 +1,50 @@
+.mat-tab-group{
+  background-color: white !important;
+}
+
+
+.account-details{
+  width: 60%;
+}
+
+@media (max-width: 700px) {
+  .account-details{
+      width: 100%;
+  }
+
+}
+
+.no-data{
+margin: 3%;
+color: rgb(49, 49, 49);
+}
+
+.data{
+margin: 3%;
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 50%;
+}
+
+.dropdown{
+  position: absolute;
+  right: 30%;
+}
+
+.bg-form{
+  background-color: #f7f7f7;
+}

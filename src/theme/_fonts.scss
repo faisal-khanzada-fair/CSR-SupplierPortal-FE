@@ -1,0 +1,16 @@
+$font-family-lato-regular: "lato-regular";
+$font-family-lato-bold: "lato-bold";
+
+@font-face {
+  font-family: #{$font-family-lato-regular};
+  src: url(../assets/fonts/lato/Lato-Regular.ttf) format("opentype");
+}
+@font-face {
+  font-family: #{$font-family-lato-bold};
+  src: url(../assets/fonts/lato/Lato-Bold.ttf) format("opentype");
+}
+
+:root {
+  --font-family-lato-regular: #{$font-family-lato-regular};
+  --font-family-lato-bold: #{$font-family-lato-bold};
+}

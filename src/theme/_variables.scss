@@ -1,0 +1,72 @@
+/* mention all the variables here */
+
+// dummy colors to be removed
+$primary: #81899b;
+$accent: #302e24;
+$warn: #dfa612;
+$nav-bg: #000;
+$nav-top-border: red;
+$carousal-indicator: red;
+$btn-red: red;
+$text-color: #424242;
+
+// Font size variables
+$font-32: 2rem;
+$font-24: 1.5rem;
+$font-18: 1.125rem;
+$font-14: 0.875rem;
+$font-13: 0.813rem;
+$font-11: 0.688rem;
+$font-28: 1.75rem;
+$font-12: 0.75rem;
+$font-16: 1rem;
+$font-17: 1.063rem;
+
+// line height variables
+$line-height-40: 2.5rem;
+$line-height-30: 1.875rem;
+$line-height-28: 1.75rem;
+$line-height-23: 1.438rem;
+$line-height-21: 1.313rem;
+$line-height-19: 1.188rem;
+$line-height-18: 1.313rem;
+$line-height-17: 1.125rem;
+$line-height-16: 1.063rem;
+$line-height-13: 0.813rem;
+$enable-responsive-font-sizes:  true !default;
+$font-size-base:  rem !default;
+
+:root {
+  // dummy colors to be removed
+  --primary: #{$primary};
+  --accent: #{$accent};
+  --warn: #{$warn};
+  --nav-bg: #{$nav-bg};
+  --nav-top-border: #{$nav-top-border};
+  --carousal-indicator: #{$carousal-indicator};
+  --btn-red: #{$btn-red};
+  --text-color: #{$text-color};
+
+  // Font size id assigned to variables
+  --font-32: #{$font-32};
+  --font-24: #{$font-24};
+  --font-18: #{$font-18};
+  --font-14: #{$font-14};
+  --font-13: #{$font-13};
+  --font-11: #{$font-11};
+  --font-28: #{$font-28};
+  --font-12: #{$font-12};
+  --font-16: #{$font-16};
+  --font-17: #{$font-17};
+  //Line-spacing id assigned to variables
+  --line-space-40: #{$line-height-40};
+  --line-space-30: #{$line-height-30};
+  --line-space-28: #{$line-height-28};
+  --line-space-23: #{$line-height-23};
+  --line-space-21: #{$line-height-21};
+  --line-space-19: #{$line-height-19};
+  --line-space-18: #{$line-height-18};
+  --line-space-17: #{$line-height-17};
+  --line-space-16: #{$line-height-16};
+  --line-space-13: #{$line-height-13};
+}

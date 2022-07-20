@@ -1,0 +1,81 @@
+  <div class="content">
+  <div class="heading">
+      <h1>Account Details</h1>
+  </div>
+      <div class="tabs">
+        <mat-card>
+          <div class="row m-1">
+            <!-- Column 1 -->
+            <div class="col m-1">
+              <div class="row m-4">
+                <div class="col">
+                  Name
+                </div>
+                <div class="col">
+                  {{getAccountById?.accountName1||'-'}}
+                </div>
+              </div>
+              <div class="row m-4">
+                <div class="col">
+                  ABN
+                </div>
+                <div class="col">
+                  {{getAccountById?.abn||'-'}}
+                </div>
+              </div>
+              <div class="row m-4">
+                <div class="col">
+                  Email
+                </div>
+                <div class="col">
+                  {{getAccountById?.emailAddr||'-'}}
+                </div>
+              </div>
+              <div class="row m-4">
+                <div class="col">
+                  Address
+                </div>
+                <div class="col">
+                  {{getAccountById?.address1||'-'}}
+                </div>
+              </div>
+              <div class="row m-4">
+                <div class="col">
+                  Bank Details
+                </div>
+                <div class="col">
+                  {{getAccountById?.bankAddr||'-'}}
+                </div>
+              </div>
+              <div class="row m-4">
+                <div class="col">
+                  Payment Terms
+                </div>
+                <div class="col">
+                  {{getAccountById?.paymentTermText||'-'}}
+                </div>
+              </div>
+            </div>
+            <!-- Column 2 -->
+            <div class="col m-1">
+              <div class="row m-4">
+                <div class="col">
+                  Phone
+                </div>
+                <div class="col">
+                  {{getAccountById?.phone||'-'}}
+                </div>
+              </div>
+              <div class="row m-4">
+                <div class="col">
+                  Fax
+                </div>
+                <div class="col">
+                  {{getAccountById?.fax||'-'}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+</div>

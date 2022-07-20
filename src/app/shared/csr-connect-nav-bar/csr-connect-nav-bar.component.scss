@@ -1,0 +1,51 @@
+nav {
+    z-index: 30;
+    position: fixed;
+    top: 46px;
+    height: 46px;
+    min-height: 0;
+    border: 0;
+    background: #EBEBEB;
+    margin-bottom: 0;
+
+    div.container-fluid {
+        padding: 0;
+    }
+
+    ul.navigation-item {
+        padding:0;
+    }
+}    
+
+@media (max-width: 768px) {
+
+    nav {
+        position: fixed;
+        z-index: 30;
+        left: 0;
+        top: 0;
+        width: 274px;
+        height: 100%;
+        margin-left: -274px;
+        border: 0;
+        box-shadow: -20px 0 15px -15px rgb(0 0 0 / 20%) inset;
+        transition: 0.2s margin-left ease-out;
+    }
+
+    .nav-open {
+
+        :host {
+
+            nav {
+                margin-left: 0;
+                overflow-y: scroll;
+                padding-bottom: 60px;
+            }
+        }
+    }
+
+    ul.navigation-item {
+        margin:8px -13px;
+    }
+
+}

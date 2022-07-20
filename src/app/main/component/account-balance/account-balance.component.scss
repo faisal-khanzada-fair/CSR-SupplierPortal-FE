@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+  }
+
+
+  .account-balance{
+    width: 60%;
+  }
+
+  
+
+  @media (max-width: 700px) {
+      .account-balance{
+        width: 100%;
+      }
+  }

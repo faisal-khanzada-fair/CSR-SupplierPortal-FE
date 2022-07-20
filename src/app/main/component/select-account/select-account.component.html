@@ -1,0 +1,30 @@
+<div class="sidebar">
+  <div class="slideBarHeader">
+      <div class="input-group mb-3">
+          <div class="input-group-prepend">
+          </div>
+          <input type="text" class="form-control" placeholder="Search Accounts" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+  </div>
+  <!-- <div  class="listing" *ngFor="let list of listing">
+      <div class="list">
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label>{{list.name}}</label>
+      </div>
+  </div> -->
+  
+  <table mat-table [dataSource]="listing" class="mat-elevation-z8">
+  
+      <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+    
+      <!-- Position Column -->
+      <ng-container matColumnDef="AccountName1">
+        <th mat-header-cell *matHeaderCellDef> Account Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.AccountName1}} </td>
+      </ng-container>
+    
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="rowClicked(row);highlight(row);" [ngClass]="{'highlight': selectedRowIndex == row.AccountId}"></tr>
+    </table>
+</div>

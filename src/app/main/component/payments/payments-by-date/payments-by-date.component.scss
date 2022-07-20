@@ -1,0 +1,51 @@
+.row{
+    display: flex;
+    width: 100%;
+    margin-top: 3%;
+   }
+
+ 
+
+   .date-form-field{
+    width: 40%;
+    float: left;
+    margin-right: 5%;
+    padding-left: 3%;
+  }
+
+  .btn-group{
+      padding-top: 14px;
+  }
+
+   .dropdown{
+       padding-top: 8px;
+       float: right;
+   }
+
+table {
+    width: 100%;
+  }
+
+  .heading{
+    // margin-top: -60px;
+    margin-bottom: 60px;
+  }
+  
+
+  .button{
+    margin-left: 530px;
+  }
+
+  @media (max-width: 700px) {
+      .account-balance{
+        width: 50%;
+      }
+  }
+  #payment-details{
+    cursor: pointer;
+   }
+
+   .card-body{
+    overflow: hidden;
+   }
+

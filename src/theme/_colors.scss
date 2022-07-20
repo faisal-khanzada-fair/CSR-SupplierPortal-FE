@@ -1,0 +1,67 @@
+/* Colors: */
+
+$color-blackish-grey: #373e45;
+$color-red: #fc1922;
+$color-white: #ffffff;
+$color-dark-green: #06290d;
+$color-black: #000000;
+$color-yellowish-white: #fff3cd;
+$color-light-yellow: #ffef75;
+$color-yellow: #f5b705;
+$color-orange: #f79337;
+$color-mustard: #856404;
+$color-greenish-white: #d4edda;
+$color-light-green: #4fc507;
+$color-success: #00a651;
+$color-green: #155724;
+$color-cyan: #11a7cc;
+$color-blue: #0072bc;
+$color-maroon: #973937;
+$color-white-1: #f8d7da;
+$color-white-2: #c6ccd6;
+$color-white-3: #ebf2fc;
+$color-white-4: #ebebeb;
+$color-white-5: #f7f7f7;
+$color-white-6: #e3e3e3;
+$color-white-7: #cce5ff;
+$color-white-8: #c4d6ea;
+$color-blackish-grey-dark: #454b52;
+$color-hover-red: #c41104;
+$color-border-seperator: #e6e6e6;
+$color-new-red: #ed1c24;
+$color-new-grey: #949596;
+$color-light-gray: #d6d6d6;
+
+:root {
+  --color-blackish-grey: #{$color-blackish-grey};
+  --color-red: #{$color-red};
+  --color-white: #{$color-white};
+  --color-dark-green: #{$color-dark-green};
+  --color-black: #{$color-black};
+  --color-yellowish-white: #{$color-yellowish-white};
+  --color-light-yellow: #{$color-light-yellow};
+  --color-yellow: #{$color-yellow};
+  --color-orange: #{$color-orange};
+  --color-mustard: #{$color-mustard};
+  --color-greenish-white: #{$color-greenish-white};
+  --color-light-green: #{$color-light-green};
+  --color-success: #{$color-success};
+  --color-green: #{$color-green};
+  --color-cyan: #{$color-cyan};
+  --color-blue: #{$color-blue};
+  --color-maroon: #{$color-maroon};
+  --color-white-1: #{$color-white-1};
+  --color-white-2: #{$color-white-2};
+  --color-white-3: #{$color-white-3};
+  --color-white-4: #{$color-white-4};
+  --color-white-5: #{$color-white-5};
+  --color-white-6: #{$color-white-6};
+  --color-white-7: #{$color-white-7};
+  --color-white-8: #{$color-white-8};
+  --color-blackish-grey-dark: #{$color-blackish-grey-dark};
+  --color-hover-red: #{$color-hover-red};
+  --color-border-seperator: #{$color-border-seperator};
+  --color-new-red: #{$color-new-red};
+  --color-light-gray: #{$color-light-gray};
+  --color-new-grey: #{$color-new-grey};
+}

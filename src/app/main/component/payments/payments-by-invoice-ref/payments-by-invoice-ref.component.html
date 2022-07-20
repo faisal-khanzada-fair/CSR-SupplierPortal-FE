@@ -1,0 +1,75 @@
+<div class="card-body">
+
+    <div class="row">
+        <div class="form-group pull-left">
+            <label for="invRefInput" >
+            </label>
+            <form [formGroup]="searchByInvoiceForm" (ngSubmit)="onSubmit()">
+                <input id="invRef" name="invRef" class="search-invoice-ref" formControlName="invRef" [(ngModel)]="searchFields.invRef" />
+                <div class="btn-group">
+                    <input type="submit" class="btn btn-primary" value="Search" />
+                </div>
+
+
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="table-exports-menu" mat-button
+                        [matMenuTriggerFor]="menu">
+                        <i class="fa fa-fw fa-download"></i>
+                        <span class="sr-only">Export</span>
+                        <span class="caret"></span>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-button
+                            (click)="exporter.exportTable('xlsx',{fileName:'payment_data'})">Excel</button>
+                        <button mat-button (click)="exporter.exportTable('csv',{fileName:'payment_data'})">CSV</button>
+                        <button mat-button
+                            (click)="exporter.exportTable('json',{fileName:'payment_data'})">JSON</button>
+                        <button mat-button (click)="exporter.exportTable('txt',{fileName:'payment_data'})">TEXT</button>
+                    </mat-menu>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <table mat-table matTableExporter [dataSource]="dataSource" #exporter="matTableExporter" class="mat-elevation-z8">
+
+        <!--- Note that these columns can be defined in any order.
+                        The actual rendered columns are set as a property on the row definition" -->
+
+        <!-- Position Column -->
+        <ng-container matColumnDef="account">
+            <th mat-header-cell *matHeaderCellDef> Account </th>
+            <td mat-cell *matCellDef="let element"> {{element.VendorNum}} </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="csrReferenfce">
+            <th mat-header-cell *matHeaderCellDef> CSR Reference </th>
+            <td mat-cell *matCellDef="let element" id="payment-details" (click)="openDialog(element.AccountingDocNum)">
+                {{element.AccountingDocNum}} </td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="invReference">
+            <th mat-header-cell *matHeaderCellDef> Invoice Ref </th>
+            <td mat-cell *matCellDef="let element"> {{element.RefernceDocumentNumber}} </td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="paymentDate">
+            <th mat-header-cell *matHeaderCellDef> Payment Date </th>
+            <td mat-cell *matCellDef="let element"> {{element.ClearingDate}} </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="amount">
+            <th mat-header-cell *matHeaderCellDef> Amount </th>
+            <td mat-cell *matCellDef="let element"> {{element.Amount}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aria-label="Select page of periodic elements">
+    </mat-paginator>
+</div>

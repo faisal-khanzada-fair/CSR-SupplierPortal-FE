@@ -1,0 +1,13 @@
+.mat-tab-group{
+    background-color: white !important;
+}
+
+.payment-information{
+    width: 60%;
+}
+
+@media (max-width: 700px) {
+    .payment-information{
+        width: 100%;
+    }
+}

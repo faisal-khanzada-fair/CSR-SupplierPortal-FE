@@ -1,0 +1,67 @@
+<nav id='navigation-bar' class="navbar navbar-expand-md bg-light submenu">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-start flex-grow-1 pe-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"  (click)="Navigation('/welcome')">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"  (click)="Navigation('/account-balance')">Account Balance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"  (click)="Navigation('/account-details')">Account Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"  (click)="Navigation('/payment-information')">Payment Information</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"  (click)="Navigation('/invoice')">Invoices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"  (click)="Navigation('/supplier-invoice')">Supplier Invoices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"  (click)="Navigation('/outstanding-invoices')">Outstanding Invoices</a>
+            </li>
+            <li class="nav-item">
+              <!-- <select class="form-select" aria-label="Default select example">
+                <option selected>Invoices</option>
+                <option value="1" (click)="Navigation('/invoices')" value="Invoices">Invoices</option>
+                <option value="2" (click)="Navigation('/supplier-invoice')" value="Supplier Invoice">Supplier Invoice</option>
+                <option value="3" (click)="Navigation('/outstanding-invoices')"  value="Outstanding Invoices"><a class="nav-link active" aria-current="page"  (click)="Navigation('/outstanding-invoices')">Outstanding Invoices</a></option>
+              </select> -->
+              <!-- <mat-form-field appearance="fill">
+                <mat-select [(value)]="invoiceType">
+                  <mat-option >Invoices</mat-option>
+                  <mat-option  >Supplier Invoice</mat-option>
+                  <mat-option >Outstanding Invoices</mat-option>
+                </mat-select>
+              </mat-form-field> -->
+              <!-- <div class="dropdown open">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Invoices
+                </button>
+                <div class="dropdown-menu open" aria-labelledby="dropdownMenuButton">
+                  <a class="nav-link active" aria-current="page"  (click)="Navigation('/invoices')">Invoices</a>
+                  <a class="nav-link active" aria-current="page"  (click)="Navigation('/supplier-invoice')">Supplier Invoice</a>
+                  <a class="nav-link active" aria-current="page"  (click)="Navigation('/outstanding-invoices')">Outstanding Invoices</a>
+                </div>
+              </div> -->
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </div>
+  </nav>

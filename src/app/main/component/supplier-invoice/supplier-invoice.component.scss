@@ -1,0 +1,55 @@
+.mat-tab-group{
+    background-color: white !important;
+}
+
+.supplier-invoice{
+    width: 60%;
+}
+
+@media (max-width: 700px) {
+    .supplier-invoice{
+        width: 100%;
+    }
+}
+
+.no-data{
+  margin: 3%;
+  color: rgb(49, 49, 49);
+}
+
+.data{
+  margin: 3%;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 50%;
+  }
+
+  table{
+    width: 100%;
+  }
+  
+  th{
+    background-color: white;
+  }
+
+  tr{
+    background-color: rgb(248, 248, 248);
+  }
+
+  tr:hover{
+    background-color: aliceblue;
+  }

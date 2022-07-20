@@ -1,0 +1,63 @@
+<!-- <div class="navigation">
+    <app-standard-portal-header class="header"></app-standard-portal-header>
+    <app-csr-nav class="submenu"></app-csr-nav>
+</div>
+<div class="content">
+    <router-outlet></router-outlet>
+</div> -->
+
+
+<!-- <div class="wrapper">
+    <div class="main-head">
+        <csr-connect-header></csr-connect-header>
+        <div class="headerbuttons">
+            <div class="button1">
+                <div class="dropdown" [ngClass]="{'show-slidebar': show  }">
+                    <button mat-button class="slideBar" (click)="showSlidebar()">Select Account</button>
+                    <div class="dropdown-content" [ngClass]="{'show-slidebar': show  }">
+                        <app-select-account></app-select-account>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-nav">
+        <app-csr-nav></app-csr-nav>
+    </div>
+    <div class="emptyDiv">
+    </div>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="main-footer">
+        <app-standard-portal-footer></app-standard-portal-footer>
+    </div>
+</div> -->
+
+<div class="container-fluid">
+    <div class="dropdown-content" [ngClass]="{'show-slidebar': show  }">
+        <app-select-account></app-select-account>
+    </div>
+    <div *ngIf="loaderService.isLoading | async" class="loader">
+        <mat-spinner color="warn"></mat-spinner>
+    </div>
+    <div class="main-head row">
+        <csr-connect-header></csr-connect-header>
+        <div class="headerbuttons">
+            <button mat-button class="button1" (click)="showSlidebar()"><div class="buttonText">Select Account</div></button>    
+                <button mat-button class = "login-button button1" (click)="navigateToLogin()"><div class="buttonText">Login</div></button>
+                <button mat-button class = "logout-button button1" (click)="navigateToLogin()"><div class="buttonText">Logout</div></button>
+        </div>
+    </div>
+    <div class="navbar row">
+        <app-csr-nav></app-csr-nav>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    <div class="main-footer">
+        <app-standard-portal-footer></app-standard-portal-footer>
+    </div>
+</div>

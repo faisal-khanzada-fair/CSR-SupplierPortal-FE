@@ -1,0 +1,46 @@
+table {
+  width: 100%;
+}
+
+.card-body{
+  overflow: hidden;
+ }
+
+.heading{
+  // margin-top: -60px;
+  margin-bottom: 60px;
+}
+
+
+.button{
+  margin-left: 530px;
+}
+
+@media (max-width: 700px) {
+    .account-balance{
+      width: 50%;
+    }
+}
+
+.row{
+  display: flex;
+  width: 100%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+ }
+
+ .search-invoice-ref{
+  width: 44%;
+  height: 38px;
+  float: left;
+  margin-right: 5%;
+  padding-inline: 3%;
+}
+
+ .dropdown{
+     float: right;
+ }
+
+ #payment-details{
+  cursor: pointer;
+ }

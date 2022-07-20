@@ -1,0 +1,198 @@
+<nav id="nav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Landing page nav -->
+        <!-- <ul class="navigation-item">
+            <csr-connect-header-button href="#/home/features" label="Features"></csr-connect-header-button>
+            <csr-connect-header-button href="#/home/more-info" label="More information"></csr-connect-header-button>
+            <csr-connect-header-button href="#/home/partners" label="Partners" *ngIf="user_featureToggle730">
+            </csr-connect-header-button>
+            <csr-connect-header-button href="#/home/contact-us" label="Contact Us"></csr-connect-header-button>
+            <csr-connect-header-button href="http://blog.csrconnect.com.au" target="_blank" label="Blog">
+            </csr-connect-header-button>
+        </ul> -->
+
+        <ul class="navigation-item">
+
+            <!-- Home -->
+            <csr-connect-nav-bar-button icon="fa fa-home" href="#/dash">
+            </csr-connect-nav-bar-button>
+
+            <!-- Work -->
+            <csr-connect-nav-bar-dropdown label="Work">
+                <csr-connect-dropdown-item label="Jobs" href="#/jobs" *requiredUserPermissions="'Customer/Jobs'">
+                </csr-connect-dropdown-item>
+                <csr-connect-dropdown-item label="Leads" href="#/leads" *requiredUserPermissions="'Customer/Leads'">
+                </csr-connect-dropdown-item>
+                <csr-connect-dropdown-item label="Integrations" href="#/admin/integrations"
+                    *requiredUserProfileTypes="[7,8]">
+                </csr-connect-dropdown-item>
+            </csr-connect-nav-bar-dropdown>
+
+            <!-- Products -->
+            <csr-connect-nav-bar-button label="Products" href="#/products"
+                *requiredUserPermissions="'Customer/ProductList'"></csr-connect-nav-bar-button>
+
+            <!-- Documents -->
+            <ng-container *requiredUserPermissions="'Customer/Documents'">
+                <csr-connect-nav-bar-dropdown label="Documents"
+                    *requiredUserPermissions="'Customer/Documents'">
+                    <!-- Documents -->
+                    <ng-container *requiredUserPermissions="'Customer/Documents'">
+                        <li class="dropdown-header">Documents</li>
+                        <csr-connect-dropdown-item label="All documents" href="#/docs"></csr-connect-dropdown-item>
+                    </ng-container>
+                    <csr-connect-dropdown-item label="Invoices" href="#/docs?type=1"
+                        *requiredUserPermissions="'Customer/Invoice'"></csr-connect-dropdown-item>
+                    <csr-connect-dropdown-item label="Quotes" href="#/docs?type=2"
+                        *requiredUserPermissions="'Customer/Quote'"></csr-connect-dropdown-item>
+                    <csr-connect-dropdown-item label="Orders" href="#/docs?type=3"
+                        *requiredUserPermissions="'Customer/SalesOrder'"></csr-connect-dropdown-item>
+                    <csr-connect-dropdown-item label="Deliveries" href="#/docs?type=4"
+                        *requiredUserPermissions="'Customer/Deliveries'">
+                    </csr-connect-dropdown-item>
+
+                    <!-- Downloads -->
+                    <ng-container *requiredUserPermissions="'All/Download'">
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Downloads</li>
+                        <csr-connect-dropdown-item label="Downloads" href="#/downloads"></csr-connect-dropdown-item>
+                    </ng-container>
+                </csr-connect-nav-bar-dropdown>
+            </ng-container>
+
+            <!-- Orders -->
+            <csr-connect-nav-bar-dropdown label="Orders">
+                <!-- Orders -->
+                <li class="dropdown-header" *requiredUserPermissions="'Customer/SalesOrder;Customer/OnlineOrdering'">
+                    Orders</li>
+                <csr-connect-dropdown-item label="Recent orders" href="#/docs?type=3"
+                    *requiredUserPermissions="'Customer/SalesOrder'"></csr-connect-dropdown-item>
+                <ng-container *requiredUserPermissions="'Customer/OnlineOrdering'">
+                    <csr-connect-dropdown-item label="Draft orders" href="#/orders/drafts">
+                    </csr-connect-dropdown-item>
+                    <csr-connect-dropdown-item label="Order favourites" href="#/orders/favourites">
+                    </csr-connect-dropdown-item>
+                    <csr-connect-dropdown-item label="Place new order" href="#/orders/getstarted">
+                    </csr-connect-dropdown-item>
+                </ng-container>
+
+                <!-- Deliveries -->
+                <ng-container *requiredUserPermissions="'Customer/Deliveries'">
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Deliveries</li>
+                    <csr-connect-dropdown-item label="Deliveries" href="#/deliveries"></csr-connect-dropdown-item>
+                </ng-container>
+            </csr-connect-nav-bar-dropdown>
+
+            <!-- Financials -->
+            <csr-connect-nav-bar-dropdown label="Financials">
+                <csr-connect-dropdown-item label="Account balance" href="#/financials/accountbalance"
+                    *requiredUserPermissions="'Customer/Account/Balance'">
+                </csr-connect-dropdown-item>
+                <csr-connect-dropdown-item label="Statements" href="#/financials/statements"
+                    *requiredUserPermissions="'Customer/Statement'">
+                </csr-connect-dropdown-item>
+                <csr-connect-dropdown-item label="Payments" href="#/financials/payments?entry=menu"
+                    *requiredUserPermissions="'All/Payment:u'">
+                </csr-connect-dropdown-item>
+                <li role="separator" class="divider" *requiredUserPermissions="'All/Payment:r'"></li>
+                <csr-connect-dropdown-item label="Manage payment methods" href="#/financials/payments/methods"
+                    *requiredUserPermissions="'All/Payment:u'">
+                </csr-connect-dropdown-item>
+                <csr-connect-dropdown-item label="Payment history" href="#/financials/payments/history"
+                    *requiredUserPermissions="'All/Payment:r'">
+                </csr-connect-dropdown-item>
+            </csr-connect-nav-bar-dropdown>
+
+            <!-- Reports -->
+            <csr-connect-nav-bar-dropdown label="Reports">
+                <ng-container *requiredUserPermissions="'Customer/Reporting'">
+                    <li class="dropdown-header" *requiredUserProfileTypes="[1,2,3,4,5]">Customer reports</li>
+                </ng-container>
+                <csr-connect-dropdown-item label="Purchase history" href="#/reports/purchase-history/month/">
+                </csr-connect-dropdown-item>
+                <ng-container *requiredUserProfileTypes="[1,2,3,4,5]">
+                    <li role="separator" class="divider"
+                        *requiredUserPermissions="'Customer/Reporting;Administration/Payment/History;All/Profile'"></li>
+                    <li class="dropdown-header" *requiredUserPermissions="'Customer/Reporting'">Internal reports</li>
+                    <csr-connect-dropdown-item label="All reports" href="#/admin/reports"
+                        *requiredUserPermissions="'All/Profile'">
+                    </csr-connect-dropdown-item>
+                </ng-container>
+                <csr-connect-dropdown-item label="Metrics reports" href="#/admin/metricsevents"
+                    *requiredUserProfileTypes="[1]">
+                </csr-connect-dropdown-item>
+                <csr-connect-dropdown-item label="Payment history" href="#/admin/payments"
+                    *requiredUserPermissions="'Administration/Payment/History'">
+                </csr-connect-dropdown-item>
+                <ng-container *requiredUserPermissions="'Customer/Reporting'">
+                    <csr-connect-dropdown-item label="Invoice delivery" href="#/reports/invoice-delivery"
+                        *requiredUserProfileTypes="[1,2,3]">
+                    </csr-connect-dropdown-item>
+                </ng-container>
+            </csr-connect-nav-bar-dropdown>
+
+            <!-- Resources -->
+            <csr-connect-nav-bar-dropdown label="Resources">
+                <ng-container *requiredUserProfileTypes="[1,2,3,4,5]">
+                    <li class="dropdown-header">Sales &amp; marketing</li>
+                    <csr-connect-dropdown-item label="Sales information" href="#/sales/info">
+                    </csr-connect-dropdown-item>
+                    <csr-connect-dropdown-item label="Sales FAQs" href="#/sales/faq"></csr-connect-dropdown-item>
+                    <csr-connect-dropdown-item label="Training webinar" href="#/sales/webinars">
+                    </csr-connect-dropdown-item>
+                    <csr-connect-dropdown-item label="Resource library"
+                        href="https://partners.csr.com.au/external/CONNECTCOMM/Pages/Home.aspx" target="_blank">
+                    </csr-connect-dropdown-item>
+                    <li role="separator" class="divider"></li>
+                </ng-container>
+                <li class="dropdown-header">Additional Resources</li>
+                <csr-connect-dropdown-item label="Connect blog" href="http://blog.csrconnect.com.au/" target="_blank">
+                </csr-connect-dropdown-item>
+                <csr-connect-dropdown-item label="Useful links" href="#/resources"></csr-connect-dropdown-item>
+            </csr-connect-nav-bar-dropdown>
+
+            <!-- Admin -->
+            <csr-connect-nav-bar-dropdown label="Admin">
+                <ng-container *requiredUserPermissions="'Customer/Account'">
+                    <!-- Internal users -->
+                    <csr-connect-dropdown-item label="Manage accounts" href="#/admin/organisations"
+                        *ngIf="!organisations || organisations.length === 0"></csr-connect-dropdown-item>
+                    <!-- Single organisation -->
+                    <csr-connect-dropdown-item label="Manage contacts"
+                        href="{{ '#/admin/organisations/' + organisations[0].id + '/contacts' }}"
+                        *ngIf="organisations && organisations.length == 1">
+                    </csr-connect-dropdown-item>
+                    <csr-connect-dropdown-item label="Manage accounts"
+                        href="{{ '#/admin/organisations/' + organisations[0].id }}"
+                        *ngIf="organisations && organisations.length == 1">
+                    </csr-connect-dropdown-item>
+                    <!-- Multiple organisations-->
+                    <csr-connect-dropdown-item label="Accounts &amp; contacts" href="#/admin/organisations"
+                        *ngIf="organisations && organisations.length > 1"></csr-connect-dropdown-item>
+                </ng-container>
+                <ng-container *requiredUserPermissions="'All/Profile'">
+                    <csr-connect-dropdown-item label="Manage users" href="#/admin/profile/list"
+                        *requiredUserProfileTypes="[1,2,3,4,5,6,8]">
+                    </csr-connect-dropdown-item>
+                </ng-container>
+                <csr-connect-dropdown-item label="Teammates" href="#/admin/profile/list"
+                    *requiredUserProfileTypes="[7]">
+                </csr-connect-dropdown-item>
+                <csr-connect-dropdown-item label="Manage user permissions" href="#/admin/permissionmanagement"
+                    *requiredUserProfileTypes="[1]">
+                </csr-connect-dropdown-item>
+                <csr-connect-dropdown-item label="Manage plants" href="#/admin/managePlants"
+                    *requiredUserPermissions="'Admin/ManagePlants'">
+                </csr-connect-dropdown-item>
+                <csr-connect-dropdown-item label="Orders API" (click)="ordersApiLinkOnClick()"
+                    *requiredUserPermissions="'Customer/API/Orders'"></csr-connect-dropdown-item>
+            </csr-connect-nav-bar-dropdown>
+        </ul>
+
+
+        <!-- <ng-content [hidden]="!isUserAuthenticated || isLanding"> </ng-content> -->
+
+
+    </div>
+</nav>

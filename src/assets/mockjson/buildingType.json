@@ -1,0 +1,31 @@
+{
+	"buildingType": "Office",
+    "imageURL": "./../../assets/images/SystemSolutions_Retail_Abj+Alpha.png",
+	"applications": [{
+			"name": "Internal Walls",
+			"code": "InternalWalls",
+			"subApplications": [{
+					"name": "Corridor Walls",
+					"code": "CorridorrWalls"
+				},
+				{
+					"name": "Corridor Walls",
+					"code": "CorridorrWalls"
+				}
+			]
+		},
+		{
+			"name": "External Walls",
+			"code": "ExternalWalls",
+			"subApplications": [{
+					"name": "Concrete and Masonry",
+					"code": "ConcreteAndMasonry"
+				},
+				{
+					"name": "Vineer Wall Systems",
+					"code": "Vineer_Wall_Systems"
+				}
+			]
+		}
+	]
+}
