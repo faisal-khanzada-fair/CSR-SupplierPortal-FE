@@ -1,0 +1,19 @@
+<li
+  class="csr-connect-dropdown-item"
+  [ngClass]="{ active: isActive }"
+>
+  <a
+    [ngClass]="{ icon: icon }"
+    href="{{ href }}"
+    title="{{ label }}"
+    [attr.target]="target"
+  >
+    <span
+      *ngIf="showNewTag"
+      class="label label-feature label-feature-new label-feature-menu"
+      >New</span
+    >
+    <i *ngIf="icon" class="fa {{ icon }}"></i>
+    <span> {{ label }} </span>
+  </a>
+</li>

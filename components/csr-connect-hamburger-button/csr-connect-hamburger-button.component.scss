@@ -1,0 +1,51 @@
+.navbar-toggle {
+  float: left;
+  height: 46px;
+  width: 46px;
+  padding: 9px 14px;
+  border-color: transparent;
+  margin: 0;
+  background: rgba(55, 62, 69, 0.8);
+  border: 0;
+  border-radius: 0;
+
+  .icon-bar {
+    width: 18px;
+    background: #FFF;
+  }
+
+  &:hover, &:focus {
+    background: rgba(89, 100, 112, 0.8);
+  }
+}
+
+.navbar-toggle {
+  border-color: #333;
+  &:hover,
+  &:focus {
+    background-color: #333;
+  }
+  .icon-bar {
+    background-color: #fff;
+  }
+}
+
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}

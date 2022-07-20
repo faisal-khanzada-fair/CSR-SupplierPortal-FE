@@ -20,7 +20,7 @@ import { CustomerserviceService } from '../service/customerservice.service';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { CsrNavComponent } from './csr-nav/csr-nav.component';
 import { CsrConnectNavBarComponent } from './csr-connect-nav-bar/csr-connect-nav-bar.component'
-import { CSRAngularModule } from '../../../components/CSR.AngularComponents/csrangular.module';
+import { CSRAngularModule } from '../../../components/csrangular.module';
 import { PageLoadingMessage } from './pageLoadingMessage/pageLoadingMessage';
 import {MatSelectModule} from '@angular/material/select';
 

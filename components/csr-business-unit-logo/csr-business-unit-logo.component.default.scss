@@ -1,0 +1,22 @@
+.csr-business-unit-logo {
+
+    &.small {
+        width: 80px;
+        height: 30px;
+    }
+
+    &.medium {
+        width: 120px;
+        height: 45px;
+    }
+
+    &.large {
+        width: 160px;
+        height: 60px;
+    }
+
+    &.xlarge {
+        width: 200px;
+        height: 75px;
+    }
+}

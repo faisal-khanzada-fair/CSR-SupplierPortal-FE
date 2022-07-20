@@ -1,0 +1,16 @@
+<div class="video-wistia" *ngIf="type.toString() === VideoType[0]">
+    
+    <div id="wistia_{{media}}_container" class="panel-body embed-responsive embed-responsive-16by9">
+        <div id="wistia_{{media}}" class="wistia_embed">
+            <a href="javascript:void(0)" (click)="playVideo()">                
+                <img *ngIf="placeholderImgSrc" class="embed-responsive-item" src="{{placeholderImgSrc}}" alt="How to view your custom product pricing" />
+                <span *ngIf="!placeholderImgSrc" class="placeholder-text">
+                    <i *ngIf="!placeholderImgSrc" class="fa fa-play fa-3x"></i>
+                    <br/>
+                    <strong>Play Video</strong>
+                </span>
+            </a>
+        </div>
+        <script src="//fast.wistia.com/embed/medias/{{media}}.jsonp" async></script>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+.csr-connect-header-utility-button {
+    position: relative;
+    display: block;
+    min-width: 46px;
+    height: 46px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: rgba(55, 62, 69, 0.8);
+    color: #b6bec8;
+    text-align: center;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 34px;
+    font-family: FontAwesome;
+    transition: 0.2s background ease-out, 0.2s color 0.1s ease-out;
+    float: left;
+    border-left: 1px solid #4e5761;
+  
+    &.landing {
+      top: -7px;
+      float: right;
+      margin-left: 10px;
+      border: none;
+    }
+  
+    &:hover {
+      outline: 0;
+      color: #e2e5e9;
+      background: rgba(89, 100, 112, 0.8);
+    }
+  
+    & > .utility-icon {
+      position: relative;
+      top: -6px;
+      line-height: 15px;
+    }
+  
+    & > .utility-label {
+      font-size: 10px;
+      position: absolute;
+      top: 16px;
+      left: 13px;
+      font-family: "Lato", "Helvetica", "Arial", sans-serif;
+      color: #fff;
+    }
+  }
+  
